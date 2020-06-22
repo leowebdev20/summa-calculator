@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;400;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+html, body {
+    height: 100vh;
+}
+body {
+    background-color: #F5DFC7;
+    font-family: 'MuseoModerno', cursive;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 80px;
+    text-align: center;
+    h1 {
+    color: #537e6a;
+    font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+        color: #5a997c;
+    }
+}
+
+.calculator-container {
+    background-color: #c01600;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 260px;
+    height: 620px;
+    width: 500px;
+    margin-bottom: 70px;
+    padding: 30px;
+    border-radius: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    box-shadow: 0px 8px 50px -7px rgba(0, 0, 0, 0.589);
+}
+.calculator-container .display-container-big {
+    background-color: black;
+    width: auto;
+    height: 170px;
+    margin: 0px 8px;
+    border-radius: 12px;
+    border-top-left-radius: 57px;
+    border-top-right-radius: 57px;
+    #logo {
+        position: absolute;
+        color:rgba(243, 243, 243, 0.849);
+        margin-left: 18px;
+        margin-top: 23px;
+        font-weight: 400;
+    }
+}
+.calculator-container .display-container-small {
+    background-color: rgb(100, 100, 100);
+    height: 100px;
+    margin: 54px 16px 0px 16px;
+    border-radius: 12px;
+    // font-size: 40px;
+    // font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    #middle {
+        border-bottom: 2px solid #393e464f;
+        font-size: 26px;
+        color: rgb(76, 89, 102);
+        padding: 8px 0 0;
+    height: 48px;
+
+    }
+    #bottom {
+        height: 55px;
+        font-size: 34px;
+        color: rgb(31, 36, 41);
+        padding: 0;
+    }
+}
+.calculator-container .display-container-small .display {
+    margin: 0 22px;
+    width: 348px;
+    justify-content: center;
+    text-align: right;
+}
+// classe per accensione schermo
+.on {
+    background-color: #519679 !important;
+}
+.calculator-container .buttons-container button {
+    cursor: pointer;
+    background-color: #2c2c2c;
+    border-radius: 38px;
+    border: none;
+    color: rgb(243, 243, 243);
+    font-size: 2.5rem;
+    font-weight: 200;
+    width: 80px;
+    height: 80px;
+    transition: transform 64ms ease-in-out;
+}
+.calculator-container .buttons-container {
+    width: auto;
+    margin: 26px 0 0 6px;
+    display: grid;
+    gap: 8px;
+    grid-template-areas: 
+    "num7 num8 num9 opCe oprOn"
+    "num4 num5 num6 opMu opDi"
+    "num1 num2 num3 opMi opSq"
+    "num0 opDot opPlMi opPl opEq";
+}
+.calculator-container .buttons-container .number {
+    box-shadow: 2px 2px #EEEEEE7f;
+}
+.calculator-container .buttons-container .operator {
+    box-shadow: 2px 2px #ffc65ce1;
+    color: #ffc65ce1;
+}
+.calculator-container .buttons-container button:hover {
+    background-color: rgb(56, 56, 56);
+}
+.calculator-container .buttons-container button:active {
+    transform: scale(0.90);
+}
+
+
+.number#num0 {
+    grid-area: num0;
+}
+.number#num1 {
+    grid-area: num1;
+}
+.number#num2 {
+    grid-area: num2;
+}
+.number#num3 {
+    grid-area: num3;
+}
+.number#num4 {
+    grid-area: num4;
+}
+.number#num5 {
+    grid-area: num5;
+}
+.number#num6 {
+    grid-area: num6;
+}
+.number#num7 {
+    grid-area: num7;
+}
+.number#num8 {
+    grid-area: num8;
+}
+.number#num9 {
+    grid-area: num9;
+}
+.operator#oprCe {
+    grid-area: opCe;
+}
+.operator#oprOn {
+    grid-area: oprOn;
+}
+.operator#oprDiv {
+    grid-area: opDi;
+}
+.operator#oprMult {
+    grid-area: opMu;
+}
+.operator#oprMinus {
+    grid-area: opMi;
+}
+.operator#oprPlus {
+    grid-area: opPl;
+}
+.operator#oprDot {
+    grid-area: opDot;
+}
+.operator#oprPlusMinus {
+    grid-area: opPlMi;
+}
+.operator#oprSqroot {
+    grid-area: opSq;
+}
+.operator#oprEqual {
+    grid-area: opEq;
+    color: #5a997c;
+    box-shadow: 2px 2px #5a997c;
+}
+
+::-moz-selection { color: #a04539;}
+::selection { color: #a04539;}
+::-moz-selection { background: #3dcc89; }
+::selection { background: #3dcc89; }
+
+
+
+
