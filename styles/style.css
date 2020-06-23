@@ -125,8 +125,9 @@ body {
 }
 
 .calculator-container .buttons-container button {
+  font-family: 'MuseoModerno', cursive;
   cursor: pointer;
-  background-color: #2c2c2c;
+  background-color: #2c2c2cea;
   border-radius: 38px;
   border: none;
   color: #f3f3f3;
@@ -161,7 +162,7 @@ body {
 }
 
 .calculator-container .buttons-container button:hover {
-  background-color: #383838;
+  background-color: #3d3d3d;
 }
 
 .calculator-container .buttons-container button:active {
